@@ -122,36 +122,7 @@
 
 
 // )
-// let RanNumber = Math.floor(Math.random() * 11);
-// console.log(RanNumber);
-// document.querySelector("#buttonArea").addEventListener("click", test)
 
-
-// function test() {
-
-//     let input_User = document.querySelector("#userGuess").value;
-//     let test_Number = document.querySelector(".test");
-
-//     if (input_User && input_User >= 1) {
-//         if (input_User > RanNumber) {
-//             test_Number.innerHTML = "to big Numbering "
-//             test_Number.style.backgroundColor = "red", test_Number.style.color = "white"
-//         } else if (input_User < RanNumber) {
-//             test_Number.innerHTML = "to small Numbering";
-//             test_Number.style.backgroundColor = "red", test_Number.style.color = "white"
-
-//         } else {
-//             test_Number.innerHTML = "pefect find true number"
-//             document.querySelector("body").style.backgroundColor = "green";
-//             test_Number.style.backgroundColor = "green"
-
-
-
-
-
-//         }
-//     }
-// }
 // console.log(this)
 
 // const User = {
@@ -237,3 +208,129 @@
 // [n1, n2, n3, n4, [n5, n6]] = array;
 // console.log(n1, n2, n3, n4, n5, n6);
 // a = [1, 2];
+// let new_Set = new Set([1, 2, 3, 3, 4]);
+// let new_Set2 = new Set([4, 7, 8, 9]);
+
+
+// function total(set1, set2) {
+//     for (let value of set2) {
+//         let newSEt = new Set();
+//         set1.add(value)
+//         newSEt = set1;
+
+//         return newSEt;
+//     }
+// }
+// console.log(total(new_Set, new_Set2));
+// let linkall = document.querySelectorAll("a");
+// for (let link of linkall) {
+//     let href = link.getAttribute("href");
+//     link.setAttribute("href", href.replace("http://", "https://"))
+
+// };
+// let input = document.querySelector("#userGuess");
+// input.setAttribute("title", "enter number beetwin 1 to 10");
+// input.setAttribute("style", "color:white;background-color:#777");
+// let linkAll = document.querySelectorAll("a");
+// for (let link of linkAll) {
+//     let href = link.getAttribute("href");
+
+//     link.setAttribute("href", href.replace("http://", "https://"));
+
+
+
+
+// }
+// let body = document.querySelector("body");
+// let divGame = document.querySelector("div");
+// divGame.style = "background-color: #333";
+
+// body.style.backgroundColor = "#333";
+// let h2 = document.querySelector(".test");
+// h2.style.backgroundColor = "red"
+// console.log(h2.getAttribute("class"))
+//map //
+// const myMap = new Map();
+// user = { name: 12 };
+// myMap.set("id", 23);
+// myMap.set(user, "red");
+// for (let items of myMap.values()) {
+//     console.log(items)
+// }
+// let myLink = document.querySelector("a");
+// myLink.setAttribute("data-name", "alizade");
+// console.log(myLink.dataset.name)
+
+// const arr = [1, 2, 3]
+// let map = new Map()
+// map.set(arr, "yoones");
+// map.set("number", 1232)
+// console.log(map.has(arr));
+// function namee() {
+//     return function ret() {
+//         console.log("test function ret")
+//     }
+// };
+// namee()()
+// name = "saeed", family = "alizade"
+// const obj = {
+//     name: "ali",
+//     getname: function() {
+//         return this.name;
+//     }
+// }
+// let ob = obj.getname;
+// console.log(ob.bind(obj)())
+
+
+// let ranNumber = Math.floor(Math.random() * 11);
+// console.log(ranNumber)
+// document.querySelector("button").addEventListener("click", () => {
+//     inputUser = document.querySelector("input").value;
+//     showText = document.querySelector("h2");
+//     let body = document.querySelector("body");
+//     if (inputUser && inputUser > 0) {
+//         if (inputUser > ranNumber) {
+//             showText.textContent = "to upper number"
+//             body.style.backgroundColor = "red";
+//         } else if (inputUser < ranNumber) {
+//             showText.textContent = "to lower number";
+//             body.style.backgroundColor = "red";
+//         } else {
+//             showText.textContent = "ok number"
+//             showText.style = "color:green";
+//             body.style.backgroundColor = "green";
+
+//         }
+//     }
+// });
+
+
+// links = document.querySelectorAll("a");
+// for (link of links) {
+//     console.log(link)
+// }
+// let h1 = document.querySelector("h1");
+
+// h22 = document.querySelector("h2");
+
+
+
+// function welcome(name) {
+//     return function helow() {
+//         console.log(`welcome ${name}`)
+//     }
+// }
+// let resualt = welcome("saeed    ");
+// resualt()
+// const obj = {
+//     name: "ali",
+//     getName: function(n) {
+//         return this.name + n;
+
+//     }
+// }
+
+// let result = obj.getName;
+// lastResulat = result.bind(obj, "reza")();
+// console.log(lastResulat)
