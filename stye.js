@@ -330,7 +330,116 @@
 
 //     }
 // }
-
+// bindmethod
 // let result = obj.getName;
 // lastResulat = result.bind(obj, "reza")();
-// console.log(lastResulat)
+// console.log(lastResulat);
+// const user = {
+//     id: 12,
+//     getid: function(name) {
+//         return `helow ${name} to id : ${this.id}`
+
+//     }
+// }
+// let resualt = user.getid;
+// last_Resualt = resualt.bind(user, "ali");
+// console.log(last_Resualt())
+
+
+
+
+// function getid() {
+//     console.log("get id test1 ")
+// }
+
+// let id = 122;
+// (function() {
+//     function getid(id) {
+
+//         console.log("get id test 2 for id " + id)
+//     }
+//     getid(id)
+// })(id)
+// getid()
+// let counter = 0;
+
+
+// function add() {
+//     let counter = 0;
+
+//     function plus() {
+//         counter += 2;
+
+//     }
+//     plus()
+//     plus()
+//     plus()
+//     plus()
+//     plus()
+//     return counter;
+
+
+
+
+
+
+
+// }
+
+// console.log(add())
+// let add = (function() {
+//     let counter = 0;
+//     return function() {
+//         counter += 1;
+//         return counter;
+//     }
+// })()
+
+// add()
+// add()
+// add()
+// add()
+// add()
+// add()
+// console.log(add());
+
+// function add2() {
+//     let count = 0;
+
+//     function retCount() {
+//         count += 1
+//     }
+//     retCount()
+//     retCount()
+//     retCount()
+//     return count;
+
+
+// }
+
+// let iife = (function() {
+
+
+
+
+
+//     let Count = 0;
+//     return function() {
+//         Count += 1;
+//         return Count
+//     }
+
+// })()
+// iife()
+// iife()
+// iife()
+// iife()
+// alert(iife()
+
+
+//
+
+
+
+let date = new Date("2020 7 10 20:32:36");
+console.log(date)
