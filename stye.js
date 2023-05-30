@@ -441,5 +441,19 @@
 
 
 
-let date = new Date("2020 7 10 20:32:36");
-console.log(date)
+// let date = new Date("2020 7 10 20:32:36");
+// console.log(date)
+// const iife = (function() {
+//     counter = 1;
+//     return function() {
+//         counter += 1;
+//         return counter
+//     }
+
+
+// })()
+// iife()
+// iife()
+// iife()
+// iife()
+// console.log(iife())
