@@ -457,3 +457,494 @@
 // iife()
 // iife()
 // console.log(iife())
+
+
+// function add() {
+//     let counter = 0;
+
+//     function add2() {
+//         counter += 1;
+//     }
+//     add2()
+//     add2()
+//     add2()
+//     return counter;
+// }
+
+// console.log(add())
+
+
+// const pluss = (function() {
+//     let count = 0;
+//     return function() {
+//         count += 1;
+//         return count;
+//     }
+
+
+// })()
+// pluss()
+// pluss()
+// pluss()
+// pluss()
+// console.log(pluss)
+// document.querySelector("#buttonArea").addEventListener("click", () => {
+//     let input = document.querySelector("#userGuess").value;
+//     let showStatus = document.querySelector(".test");
+//     showStatus.innerHTML = "clicked"
+//     if (input && input > 0) {
+//         alert("ok true")
+//     }
+
+// })
+// let ranCpu = Math.floor(Math.random() * 11)
+// console.log(ranCpu)
+// let btn = document.querySelector("#btn");
+// btn.addEventListener("click", () => {
+//     let input = document.querySelector("#input1").value;
+//     let showStatus = document.querySelector("h2");
+//     if (input && input > 0) {
+//         if (input > ranCpu) {
+//             showStatus.innerHTML = "to long"
+//         } else if (input < ranCpu) {
+//             showStatus.innerHTML = "to small"
+//         } else {
+//             let body = document.querySelector("body");
+//             let divGame = document.querySelector("#game");
+//             showStatus.innerHTML = "ok find number true ";
+//             showStatus.style.backgroundColor = "green";
+//             showStatus.style.color = "#ddd";
+//             body.style.backgroundColor = "green";
+//             divGame.style.backgroundColor = "green"
+//         }
+//     }
+// })
+// let math = Math;
+// let arr = [1, 87, 56];
+// console.log(math.)
+// const json = {
+//     "users": [{
+//         name: "ali",
+//         email: "saeedi@gmail.com",
+//     }, { name: "reza", email: "hasani@gmail.com" }, { name: "mohamd", email: "reza@gamil.com" }]
+// }
+// let resulat = JSON.stringify(
+
+//     { name: "ali", test: false }
+// )
+// console.log(JSON.parse(resulat).test)
+// let test = JSON.stringify(
+
+//     { name: "ali", id: "435", test: false }
+// )
+// console.log(test)
+
+
+// let resualt = JSON.parse(test).id;
+// console.log(resualt)
+// let array = [1, 265, 72, 76];
+// resualt = array.filter(even)
+// console.log(resualt)
+
+// function even(num) {
+//     return num % 2 != 0;
+// }
+// "use strict";
+// console.log(eval("2*3"))
+// let eval = 122;
+// console.log(eval)
+// let array = [54, 2, 3, 67];
+// let reducer = (acculomate, currentValue, index, array) => {
+
+//     console.log(index)
+
+//     return acculomate + currentValue;
+
+// };
+// let resualt = array.reduce(reducer);
+// console.log(resualt)
+
+// let array = [1, 22, 3];
+// let resualt = array.reduce((num1, num2, index) => num1 + num2 + index)
+// console.log(resualt);
+// class Car {
+//     constructor(name, age, cache) {
+//         this.name = name;
+//         this.age = age;
+//         this.cache = cache
+//     }
+//     getNameCar() {
+//         return this.name;
+
+//     }
+//     getAge() {
+//         return this.age;
+//     }
+
+// }
+// let car1 = new Car("bmw-528", 2017, true);
+// let car2 = new Car("benz-c200", 2012, false);
+// console.log(car2.cache)
+// class Persion {
+//     constructor(name, age, last) {
+//         this.name = name;
+//         this.age = age;
+//         this.last = last;
+
+
+
+//     }
+//     retName() {
+//         return `welccome your name  ${this.name}`;
+
+//     }
+// }
+
+// Persion.prototype.printyears = function() {
+//     let date = new Date();
+//     year = date.getFullYear();
+//     let dateUser = year - this.age;
+//     return dateUser;
+// };
+// const persion = new Persion("yoones", 21, "female");
+// console.log(persion.printyears())
+// class Persion {
+//     constructor(name, id, phone, nameFather) {
+//         this.name = name;
+//         this.nameFather = nameFather;
+//         this.id = id;
+//         this.phone = phone;
+//     }
+//     printName() {
+//         return this.name;
+//     }
+
+
+// }
+
+// let persion1 = new Persion("ramin", 43, "0913547662", "saeed")
+// class Student extends Persion {
+
+//     constructor(name, id, phone, nameFather, city) {
+//         super(name, id, phone, nameFather);
+//         this.city = city;
+//     }
+//     get City() {
+//         return `ok from ${this.city}`;
+//     }
+//     set() {
+
+//     }
+
+// }
+// let student1 = new Student("hasan", 32, "0912854932", "Ali", "mashhad");
+// console.log(student1.City);
+// class User {
+//     constructor(username, email, password) {
+//         this._username = username;
+//         this._email = email;
+//         this._password = password;
+
+
+//     }
+//     test() {
+//         console.log("ok test ")
+//     }
+//     get username() {
+//         return this._username;
+//     }
+
+
+//     set email(male) {
+//         this._email = male;
+//     }
+
+// }
+
+
+// let user1 = new User("Ali32", "ali34@gmail.com", "yoones123")
+
+// console.log(user1._email)
+// console.log("test function ");
+// console.log("test function ")
+// user2 = new User("ali", "mohamdi@gmail.com", "ali123")
+// console.log("test ")
+// class Mobile {
+//     constructor(name, age, color, ) {
+//         this._name = name;
+//         this._age = age;
+//         this._color = color
+//     }
+//     get color() {
+//         return this._color;
+//     }
+//     get name() {
+//         return this._name;
+//     }
+//     get age() {
+//         return this._age;
+//     }
+//     set name(nameMobile) {
+//         this._name = nameMobile;
+//     }
+//     set color(colorMobile) {
+//         this._color = colorMobile;
+//     }
+//     set age(ageMobile) {
+//         this._age = ageMobile;
+//     }
+// }
+// let Mobile1 = new Mobile("samsung j6 ", 2018, "green");
+// Mobile1.name = "iphone 6s";
+// Mobile1.age = 2016;
+// Mobile1.color = "white";
+// console.log(Mobile1.name)
+// console.log(Mobile1.age)
+// console.log(Mobile1.color)
+// class Persion {
+//     constructor(name) {
+//         this.name = name;
+
+//     }
+//     static heloo(p) {
+//         console.log(`heloo ${p.name}`)
+//     }
+
+
+
+// }
+
+
+// let persion1 = new Persion("saeed");
+// Persion.heloo(persion1);
+// class mobile {
+//     constructor(name, model, age) {
+//         this._name = name;
+//         this._age = age;
+//         this._model = model;
+
+//     }
+//     get name() {
+//         return this._name;
+//     }
+//     set age(replaceAge) {
+//         this._age = replaceAge;
+//     }
+// }
+// class laptop extends mobile {
+//     constructor(name, model, age, color) {
+//         super(name, model, age);
+//         this._color = color;
+//     }
+//     get color() {
+//         return this._color;
+//     }
+//     set color(replaceColor) {
+//         this._color = replaceColor;
+//     }
+// }
+// let phone = new mobile('iphone 6s', 2016, 2021);
+// console.log(phone.name)
+
+// let lap = new laptop("ideopad320", 2020, 2020, "white");
+// lap.color = "red";
+// console.log(lap._color)
+// class player {
+//     constructor(name, age) {
+//         this.name = name;
+//         this.age = age;
+
+//     }
+//     get agee() {
+//         return this.age;
+//     }
+//     static welcome(instance) {
+//         return `welcome ${instance.name}`
+//     }
+// }
+// let player1 = new player("Ali", 20);
+// let resulat = player.welcome(player1);
+// console.log(resulat);
+// class Player {
+//     constructor(name) {
+//         this.name = name;
+//     }
+//     static heloo(instance) {
+
+//         console.log(instance.name)
+//     }
+// }
+// Player.prototype.age = 32;
+
+// let player1 = new Player("saeed");
+// console.log(player1.age);
+// function sum(num1, num2, callbacke) {
+//     let resualt = num1 + num2;
+//     callbacke(resualt)
+// }
+
+// function printSum(number) {
+//     console.log(`this number is ${number}`)
+// }
+
+
+// sum(3, 4, printSum)
+// function name() {
+//     console.log("test function runing")
+
+// }
+// setInterval(() => {
+//             let date = new Date();
+//             let h = date.getHours();
+//             let m = date.getMinutes();
+//             let s = date.getSeconds();
+//             let clocked = document.querySelector("#clock");
+//             clocked.innerHTML = h + ":" + m + ":" + s;
+
+
+//         },
+//         1000)
+// let myPromis = new Promise(function(resulve, reject) {
+//     resulve();
+//     reject();
+
+
+
+// });
+// myPromis.then(
+//     function(value) {
+
+//     },
+//     function(ERROR) {
+
+//     }
+// )
+// setTimeout(() => {
+//     myfunction("test")
+// }, 3000)
+
+
+// function myfunction(value) {
+//     console.log(value)
+// }
+// let myPaomise = new Promise((resulve, reject) => {
+//     setTimeout(function() {
+//         resulve("test promise")
+
+//     }, 3000)
+// })
+
+// myPaomise.then((value) => {
+//     console.log(value)
+// }, () => {
+//     console.log("error")
+// }) 
+// let promise = new Promise((resulve, reject) => {
+//     setTimeout(() => {
+//         resulve("test ok");
+//     }, 3000)
+// });
+// promise.then(
+//     function(value) {
+//         console.log(value)
+//     }, () => [
+//         console.log("error")
+//     ]
+// )
+
+// let promise = new Promise((resualve, reject) => {
+//     setTimeout(() => {
+//         resualve("test ok next 3 secends")
+//         reject()
+//     }, 3000);
+// })
+// promise.then(function(value) {
+//     console.log(value)
+// }, () => {
+//     console.log("error")
+// })
+// let promise = new Promise((resolve, reject) => {
+//     resolve("test ok", "value2");
+
+// })
+// promise.then(
+//     (value, value2) => {
+//         console.log(value)
+
+
+//     },
+//     function() {
+//         console.log("erorr  ")
+//     }
+// ) 
+// async function user() {
+//     return "test"
+// };
+// user().then(
+//     function(value) {
+//         console.log(value)
+//     },
+//     function() {
+//         console.log("error")
+//     }
+
+// )
+// async function show() {
+//     let promise = new Promise((resolve, reject) => {
+//         setTimeout(function() {
+//             resolve("test ok")
+//         }, 4000)
+
+//     })
+//     console.log(await promise)
+// }
+// function resolvetree() {
+//     return new Promise(resolve => {
+//         setTimeout(() => {
+//             resolve("test ok resolved");
+//         }, 3000)
+
+//     })
+// }
+// async function showAsync() {
+//     console.log("calll")
+
+//     let resualt = await resolvetree();
+//     console.log(resualt)
+
+// };
+// showAsync();
+// function show_resolve() {
+//     return new Promise(resolve => {
+//         setTimeout(() => {
+//             resolve("show resolve ok");
+//         }, 3000)
+
+//     })
+
+// }
+// async function show_Acync() {
+//     console.log("calll")
+//     let resulat = await show_resolve();
+//     console.log(resulat)
+// }
+// show_Acync();
+// function show() {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve("test ok after 3 seceds");
+//         }, 3000);
+//     })
+// }
+
+
+// async function call() {
+//     console.log("test call promise ");
+//     let resulat = await show();
+//     console.log(resulat)
+// }
+// call()
+
+
+
+console.log("test ")
